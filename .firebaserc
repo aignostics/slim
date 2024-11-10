@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "idc-external-006"
+    "default": "orion-7548b"
+  },
+  "hosting": {
+    "region": "europe-west4"
   }
 }

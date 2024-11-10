@@ -1,0 +1,29 @@
+{
+    "name": "functions",
+    "scripts": {
+        "build": "tsc",
+        "build:watch": "tsc --watch --preserveWatchOutput",
+        "serve": "npm run build:watch | firebase emulators:start --only functions",
+        "shell": "npm run build && firebase functions:shell",
+        "start": "npm run shell",
+        "deploy": "firebase deploy --only functions",
+        "logs": "firebase functions:log"
+    },
+    "engines": {
+        "node": "18"
+    },
+    "main": "dist/index.js",
+    "dependencies": {
+        "@fastify/compress": "^8.0.1",
+        "@fastify/cors": "^10.0.0",
+        "@fastify/http-proxy": "^10.0.0",
+        "fastify": "^5.0.0",
+        "firebase-admin": "^12.7.0",
+        "firebase-functions": "^6.1.0"
+    },
+    "devDependencies": {
+        "firebase-functions-test": "^3.3.0",
+        "typescript": "^5.0.0"
+    },
+    "private": true
+}

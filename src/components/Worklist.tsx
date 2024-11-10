@@ -276,7 +276,7 @@ class Worklist extends React.Component<WorklistProps, WorklistState> {
       <div style={{ padding: 8 }}>
         <Input
           placeholder='Search'
-          value={selectedKeys[0]}
+          value={String(selectedKeys[0])}
           onChange={e => setSelectedKeys(
             e.target.value !== undefined ? [e.target.value] : []
           )}
