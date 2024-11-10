@@ -1,5 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 400.79 100" enable-background="new 0 0 400.79 100" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480.79 100">
+  <text x="40" y="70" 
+        font-family="Arial, sans-serif" 
+        font-size="80px" 
+        font-weight="bold" 
+        fill="#FF4B9D" 
+        style="text-transform: lowercase;">
+    aignostics
+  </text>
+  
+  <!-- Adding subtle rounded effect with a duplicate slightly offset text -->
+  <text x="40" y="70" 
+        font-family="Arial, sans-serif" 
+        font-size="80px" 
+        font-weight="bold" 
+        fill="#FF4B9D" 
+        style="text-transform: lowercase; opacity: 0.3;">
+    aignostics
+  </text>
 </svg>

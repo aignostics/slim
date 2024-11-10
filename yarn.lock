@@ -5144,7 +5144,7 @@ detect-port-alt@^1.1.6:
 
 "dicom-microscopy-viewer@git+https://github.com/helmut-hoffer-von-ankershoffen/dicom-microscopy-viewer.git#master":
   version "0.47.1"
-  resolved "git+https://github.com/helmut-hoffer-von-ankershoffen/dicom-microscopy-viewer.git#929400dd31156abc3f0e28933908d810870e1d31"
+  resolved "git+https://github.com/helmut-hoffer-von-ankershoffen/dicom-microscopy-viewer.git#f9181b8e307b29480496dcaa01a035a6ec556c1b"
   dependencies:
     "@cornerstonejs/codec-charls" "^1.2.3"
     "@cornerstonejs/codec-libjpeg-turbo-8bit" "^1.2.2"
