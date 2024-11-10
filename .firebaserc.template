@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "<GOOGLE_CLOUD_PROJECT>"
+  },
+  "hosting": {
+    "region": "<GOOGLE_CLOUD_REGION>"
+  }
+}

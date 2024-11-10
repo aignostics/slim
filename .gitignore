@@ -16,7 +16,7 @@ public/config/*
 !public/config/demo.js
 !public/config/local.js
 !public/config/preview.js
-!public/config/production.template.js
+!public/config/production.js.template
 
 # misc
 .DS_Store

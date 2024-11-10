@@ -4,13 +4,13 @@ window.config = {
     servers: [
       {
         id: 'production',
-        url: "https://<PROJECT_ID>.web.app/api/dicomweb/v1beta1/projects/<REST_OF_URL>",
+        url: "https://<GOOGLE_CLOUD_PROJECT>.web.app/api/dicomweb/v1beta1/projects/<REST_OF_URL>",
         write: true
       }
     ],
     oidc: {
       authority: "https://accounts.google.com",
-      clientId: "<CLIENT_ID.apps.googleusercontent.com>",
+      clientId: "<GOOGLE_CLOUD_CLIENT_ID>.apps.googleusercontent.com>",
       scope: "email profile openid https://www.googleapis.com/auth/cloud-healthcare",
       grantType: "implicit",
       endSessionEndpoint: "https://www.google.com/accounts/Logout"
