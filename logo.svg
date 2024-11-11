@@ -1,0 +1,20 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480.79 100">
+  <text x="40" y="70" 
+        font-family="Arial, sans-serif" 
+        font-size="80px" 
+        font-weight="bold" 
+        fill="#FF4B9D" 
+        style="text-transform: lowercase;">
+    aignostics
+  </text>
+  
+  <!-- Adding subtle rounded effect with a duplicate slightly offset text -->
+  <text x="40" y="70" 
+        font-family="Arial, sans-serif" 
+        font-size="80px" 
+        font-weight="bold" 
+        fill="#FF4B9D" 
+        style="text-transform: lowercase; opacity: 0.3;">
+    aignostics
+  </text>
+</svg>
