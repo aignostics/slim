@@ -14,6 +14,7 @@ window.config = {
       scope: "email profile openid https://www.googleapis.com/auth/cloud-healthcare",
       grantType: "implicit",
       endSessionEndpoint: "https://www.google.com/accounts/Logout"
+      audience: null
     },
     disableWorklist: false,
     disableAnnotationTools: false,

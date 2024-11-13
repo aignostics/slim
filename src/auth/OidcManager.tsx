@@ -62,7 +62,12 @@ export default class OidcManager implements AuthManager {
       loadUserInfo: true,
       automaticSilentRenew: true,
       revokeAccessTokenOnSignout: true,
-      post_logout_redirect_uri: `${baseUri}/logout`
+      post_logout_redirect_uri: `${baseUri}/logout`,
+      ...(settings.audience ? {
+        extraQueryParams: {
+        audience: settings.audience
+        }
+      } : {})
     })
     if (settings.endSessionEndpoint != null) {
       /*
@@ -77,7 +82,7 @@ export default class OidcManager implements AuthManager {
       this._oidc.metadataService.getMetadata().then(metadata => {
         if (settings.endSessionEndpoint != null) {
           metadata.end_session_endpoint = settings.endSessionEndpoint
-          this._oidc = new UserManager({
+            this._oidc = new UserManager({
             authority: settings.authority,
             client_id: settings.clientId,
             redirect_uri: baseUri,
@@ -87,8 +92,13 @@ export default class OidcManager implements AuthManager {
             automaticSilentRenew: true,
             revokeAccessTokenOnSignout: true,
             post_logout_redirect_uri: `${baseUri}/logout`,
-            metadata
-          })
+            metadata,
+            ...(settings.audience ? {
+              extraQueryParams: {
+              audience: settings.audience
+              }
+            } : {})
+            })
         }
       }).catch((error) => {
         console.error(

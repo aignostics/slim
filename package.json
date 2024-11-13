@@ -8,10 +8,10 @@
   "scripts": {
     "start": "rm -rf ./node_modules/.cache/default-development && craco start",
     "build": "craco build",
-    "build:firebase": "REACT_APP_CONFIG=gcp PUBLIC_URL=/ craco build",
     "build:production": "REACT_APP_CONFIG=production PUBLIC_URL=/ craco build",
     "auth:production": "firebase login --reauth --no-localhost",
     "deploy:production": "firebase use orion-7548b && firebase deploy",
+    "firebase:emulator": "firebase emulators:start --only functions",
     "lint": "ts-standard --env jest 'src/**/*.{tsx,ts}'",
     "fmt": "ts-standard --env jest 'src/**/*.{tsx,ts}' --fix",
     "test": "ts-standard --env jest 'src/**/*.{tsx,ts}' && craco test --setupFiles ./src/setupTests.tsx --watchAll=false",

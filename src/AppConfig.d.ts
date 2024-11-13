@@ -74,6 +74,7 @@ export interface OidcSettings {
   grantType?: string
   authorizationEndpoint?: string
   endSessionEndpoint?: string
+  audience?: string
 }
 
 export default interface AppConfig {
